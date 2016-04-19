@@ -25,7 +25,3 @@ keyframe.config(function ($routeProvider, $sceDelegateProvider) {
         });
 
 });
-
-var myDataRef = new Firebase('https://y09j38chpvl.firebaseio-demo.com/');
-
-myDataRef.set('User ' + "MAX" + ' says ' + "HELLO");

@@ -1,6 +1,6 @@
-<div ng-repeat="id in firebase.videos">
+<div class="kf-videos-list" ng-repeat="each in firebase.videos">
     <iframe
-            ng-src="{{linkComposer(id)}}"
+            ng-src="{{linkComposer(each)}}"
             width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
     </iframe>
 </div>

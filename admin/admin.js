@@ -1,5 +1,7 @@
-keyframe.controller('admin', function ($http, $scope) {
+keyframe.controller('admin', function ($http, $scope, $firebaseAuth) {
 
-    $scope.message = "admin";
+    $scope.login = function (user) {
+        console.log(user);
+    }
 
 });

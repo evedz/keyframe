@@ -6,10 +6,13 @@
   "dependencies": {
     "angular": "^1.5.1",
     "angular-route": "^1.5.1",
-    "bootstrap": "^3.3.6",
-    "firebase": "^2.4.2"
+    "angularfire": "^1.2.0",
+    "bootstrap": "^3.3.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
