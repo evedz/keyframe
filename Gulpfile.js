@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 
-gulp.task('default', ['jsVendor']);
+gulp.task('default', ['jsVendor', 'cssVendor']);
 
 gulp.task('jsVendor', function () {
     return gulp.src([
@@ -12,6 +12,14 @@ gulp.task('jsVendor', function () {
             'node_modules/angularfire/dist/angularfire.min.js'
         ])
         .pipe(concat('vendor.js'))
+        .pipe(gulp.dest(''));
+});
+
+gulp.task('cssVendor', function () {
+    return gulp.src([
+            'node_modules/bootstrap/dist/css/bootstrap.min.css'
+        ])
+        .pipe(concat('vendor.css'))
         .pipe(gulp.dest(''));
 });
 
