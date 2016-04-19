@@ -1,0 +1,18 @@
+{
+  "name": "oyycomua",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.5.1",
+    "angular-route": "^1.5.1",
+    "bootstrap": "^3.3.6",
+    "firebase": "^2.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
