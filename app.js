@@ -12,9 +12,13 @@ keyframe.config(function ($routeProvider, $sceDelegateProvider) {
             controller: 'list',
             templateUrl: 'list/list.html'
         })
-        .when('/single/:id', {
-            controller: 'single',
-            templateUrl: 'single/single.html'
+        .when('/portfolio', {
+            controller: 'portfolio',
+            templateUrl: 'portfolio/portfolio.html'
+        })
+        .when('/contacts', {
+            controller: 'contacts',
+            templateUrl: 'contacts/contacts.html'
         })
         .when('/elmin', {
             controller: 'admin',

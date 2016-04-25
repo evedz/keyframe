@@ -1,7 +1,23 @@
 body {
     background-color: #262538;
+    color: #fff;
 }
 
 .kf-videos-list iframe {
     margin-bottom: 30px;
+}
+
+.kf-video {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 100%
+}
+
+.kf-video iframe {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }

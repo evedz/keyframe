@@ -1,9 +1,5 @@
-keyframe.controller('list', function ($http, $scope, firebase) {
+keyframe.controller('list', function ($scope) {
 
-    $scope.firebase = firebase.db;
-
-    $scope.linkComposer = function (id) {
-        return 'https://player.vimeo.com/video/' + id;
-    };
+    $scope.mes = "MAIN PAGE";
 
 });
