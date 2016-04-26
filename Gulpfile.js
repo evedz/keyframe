@@ -8,7 +8,7 @@ gulp.task('jsVendor', function () {
             'node_modules/angular/angular.min.js',
             'node_modules/angular-route/angular-route.min.js',
             //'node_modules/firebase/lib/firebase-web.js',
-            'node_modules/firebase-client/firebase-2.2.1.js',
+            //'node_modules/firebase-client/firebase-2.2.1.js',
             'node_modules/angularfire/dist/angularfire.min.js'
         ])
         .pipe(concat('vendor.js'))

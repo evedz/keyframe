@@ -13,46 +13,24 @@
 
 <body>
 
-    <div class="kf-video">
-        <!--<iframe src="https://player.vimeo.com/video/115386659?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0"-->
-        <!--width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-        <iframe src="https://www.youtube.com/embed/ezyszsUmGJw?autoplay=1&loop=1&vq=hd720&rel=0&amp;controls=0&amp;showinfo=0"
-                width="1280" height="720"
-                frameborder="0" allowfullscreen>
-        </iframe>
-        <div class="overlay"></div>
-    </div>
-
-    <div class="container">
-
-    <ul class="nav nav-pills kf-nav">
-        <li><a href="/#/">Главная</a></li>
-        <li><a href="/#/portfolio">Работы</a></li>
-        <li><a href="/#/contacts">Контакты</a></li>
-    </ul>
-
-    <div ng-view></div>
-
+    <div class="container-fluid">
+        <div ng-view></div>
     </div>
 
     <!--<script src="node_modules/angular/angular.min.js"></script>-->
     <!--<script src="node_modules/angular-route/angular-route.min.js"></script>-->
     <!--<script src="node_modules/firebase/lib/firebase-web.js"></script>-->
     <!--<script src="node_modules/angularfire/dist/angularfire.min.js"></script>-->
-
     <!--<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>-->
     <!--<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>-->
 
     <script src="vendor.js"></script>
-
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
     <script src="app.js"></script>
-
     <script src="firebaseService.js"></script>
-
     <script src="list/list.js"></script>
     <script src="portfolio/portfolio.js"></script>
     <script src="contacts/contacts.js"></script>
     <script src="admin/admin.js"></script>
-
 </body>
 </html>

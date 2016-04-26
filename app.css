@@ -1,17 +1,120 @@
 body {
-    background-color: #262538;
+    background-color: #03081c;
     color: #fff;
 }
 
 .container {
-    position: relative;
-    z-index: 2;
+    /*position: relative;*/
+    /*z-index: 2;*/
 }
 
-.kf-nav {}
+.kf-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 10;
+}
+
+.kf-nav {
+    text-align: center;
+    padding-top: 50%;
+    margin-top:-500px;
+}
+
+.kf-nav li {
+    list-style-type: none;
+}
+
+.kf-nav li a {
+    font-size: 36px;
+    line-height: 1.25;
+    color: #777;
+}
 
 .kf-videos-list iframe {
     margin-bottom: 30px;
+}
+
+.kf-container-main {
+    padding-top: 50%;
+    margin-top:-500px;
+}
+
+.kf-main-border {
+    border-style: solid;
+    border-width: 2px;
+    bottom: 25px;
+    left: 25px;
+    padding: 0px;
+    position: absolute;
+    z-index: 5;
+    right: 25px;
+    top: 25px;
+    border-color: rgba(255,255,255,0.25);
+}
+
+.kf-main-title {
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 50px;
+    letter-spacing: 0.2em;
+}
+
+.kf-main-description {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.kf-menu-icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 10;
+}
+
+.kf-main-title:before,
+.kf-main-title:after {
+    content: " ";
+    display: inline-block;
+    height: 2px;
+    margin: 3px 15px;
+    width: 27px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.kf-main-info {
+    z-index: 10;
+    position: relative;
+}
+
+.kf-main-button {
+    color: #ffffff;
+    border-color: rgba(255,255,255,0.5);
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+
+    font-size: 20px;
+    padding: 6px 1px;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.kf-main-button:hover {
+    color: #000000;
+    border-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .kf-video {
