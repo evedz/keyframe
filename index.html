@@ -11,10 +11,18 @@
     <base href="/">
 </head>
 
-<body>
+<body ng-controller="body">
 
-    <div class="container-fluid">
-        <div ng-view></div>
+    <div class="kf-menu-icon" ng-click="toggleMenu()"></div>
+
+    <div ng-view></div>
+
+    <div ng-cloak ng-show="menu" class="kf-menu">
+        <ul class="kf-nav">
+            <li><a href="/#/">Home</a></li>
+            <li><a href="/#/portfolio">Work</a></li>
+            <li><a href="/#/contacts">Contact</a></li>
+        </ul>
     </div>
 
     <!--<script src="node_modules/angular/angular.min.js"></script>-->
@@ -26,7 +34,7 @@
 
     <script src="vendor.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
-    <script src="app.js"></script>
+    <script src="app.module.js"></script>
     <script src="firebaseService.js"></script>
     <script src="list/list.js"></script>
     <script src="portfolio/portfolio.js"></script>

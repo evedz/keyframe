@@ -1,4 +1,4 @@
-var keyframe = angular.module('keyframe', ['ngRoute', 'firebase']);
+var keyframe = angular.module('keyframe', ['ngRoute', 'ngAnimate', 'firebase']);
 
 keyframe.config(function ($routeProvider, $sceDelegateProvider) {
 
@@ -20,12 +20,26 @@ keyframe.config(function ($routeProvider, $sceDelegateProvider) {
             controller: 'contacts',
             templateUrl: 'contacts/contacts.html'
         })
-        .when('/elmin', {
+        .when('/admin', {
             controller: 'admin',
             templateUrl: 'admin/admin.html'
         })
         .otherwise({
             redirectTo: '/'
         });
+
+});
+
+keyframe.controller('body', function ($rootScope) {
+
+    $rootScope.menu = 0;
+
+    $rootScope.toggleMenu = function () {
+        $rootScope.menu == 0 ? $rootScope.menu = 1 : $rootScope.menu = 0;
+    };
+
+    $rootScope.$on('$routeChangeStart', function() {
+        $rootScope.menu = 0;
+    });
 
 });

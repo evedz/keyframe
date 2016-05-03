@@ -1,13 +1,12 @@
-<div class="container">
-    <ul class="kf-nav">
-        <li><a href="/#/">Главная</a></li>
-        <li><a href="/#/portfolio">Работы</a></li>
-        <li><a href="/#/contacts">Контакты</a></li>
-    </ul>
-    <div class="kf-videos-list" ng-repeat="each in firebase.videos">
-        <iframe
-                ng-src="{{linkComposer(each)}}"
-                width="100%" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-        </iframe>
+<div class="container-fluid kf-container-portfolio">
+    <h1 class="kf-main-description">onekeyframe</h1>
+    <div class="kf-main-title">visuals</div>
+    <div class="row">
+        <div class="col-md-4" ng-repeat="each in firebase.videos">
+            <iframe
+                    ng-src="{{linkComposer(each)}}"
+                    width="100%" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+            </iframe>
+        </div>
     </div>
 </div>
