@@ -34,7 +34,7 @@ keyframe.config(function ($routeProvider, $sceDelegateProvider) {
 
 });
 
-keyframe.controller('body', function ($rootScope) {
+keyframe.controller('body', function ($rootScope, $location) {
 
     $rootScope.menu = 0;
 
@@ -45,5 +45,10 @@ keyframe.controller('body', function ($rootScope) {
     $rootScope.$on('$routeChangeStart', function() {
         $rootScope.menu = 0;
     });
+
+    $rootScope.go = function (path) {
+        $location.path(path);
+        $rootScope.menu = 0;
+    };
 
 });
