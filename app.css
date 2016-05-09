@@ -114,14 +114,16 @@ a {
 }
 
 .kf-container-main {
-    width: 330px;
-    height: 200px;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -200px; /* (width + padding)/2 */
-    margin-top: -180px; /* (height + padding)/2 */
+    /*padding-top: 350px;*/
+    position: relative;
+    top: 35%;
+    /*width: 330px;*/
+    /*height: 200px;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*margin-left: -200px; !* (width + padding)/2 *!*/
+    /*margin-top: -180px; !* (height + padding)/2 *!*/
 }
 
 .kf-bg {
