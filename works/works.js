@@ -1,4 +1,4 @@
-keyframe.controller('portfolio', function ($http, $scope, firebase) {
+keyframe.controller('works', function ($http, $scope, firebase) {
 
     $scope.firebase = firebase.db;
 

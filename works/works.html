@@ -1,7 +1,11 @@
 <div class="container-fluid kf-container-portfolio">
-    <h1 class="kf-main-description">onekeyframe</h1>
-    <div class="kf-main-title">visuals</div>
     <div class="row">
+        <div class="kf-page-top-padding col-md-offset-1">
+            <span class="kf-page-title">onekeyframe</span>
+            <span class="kf-page-description">works</span>
+        </div>
+    </div>
+    <div class="row kf-page-works">
         <div class="col-md-4" ng-repeat="each in firebase.videos">
             <iframe
                     ng-src="{{linkComposer(each)}}"

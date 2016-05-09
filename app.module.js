@@ -12,13 +12,17 @@ keyframe.config(function ($routeProvider, $sceDelegateProvider) {
             controller: 'list',
             templateUrl: 'list/list.html'
         })
-        .when('/portfolio', {
-            controller: 'portfolio',
-            templateUrl: 'portfolio/portfolio.html'
+        .when('/works', {
+            controller: 'works',
+            templateUrl: 'works/works.html'
         })
         .when('/contacts', {
             controller: 'contacts',
             templateUrl: 'contacts/contacts.html'
+        })
+        .when('/about', {
+            controller: 'about',
+            templateUrl: 'about/about.html'
         })
         .when('/admin', {
             controller: 'admin',
