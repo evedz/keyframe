@@ -8,7 +8,11 @@
 body {
     color: #fff;
     font-family: 'Helvetica-Neue-UL';
-    background-color: #c1c1c1;
+    background-color: #111111;
+}
+
+a {
+    color: #fff;
 }
 
 [ng-cloak], .ng-cloak {
@@ -89,22 +93,38 @@ body {
     text-transform: uppercase;
 }
 
+.kf-page-title,
+.kf-page-description
+{
+    font-size: 27px;
+    display: block;
+}
+
+.kf-page-title {
+    color: #c1c1c1;
+}
+
+.kf-page-description {
+    color: #f2f2f2;
+
+}
+
 .kf-videos-list iframe {
     margin-bottom: 30px;
 }
 
 .kf-container-main {
-    width: 300px;
+    width: 330px;
     height: 200px;
     padding: 20px;
     position: absolute;
     top: 50%; left: 50%;
-    margin-left: -170px; /* (width + padding)/2 */
+    margin-left: -200px; /* (width + padding)/2 */
     margin-top: -180px; /* (height + padding)/2 */
 }
 
 .kf-bg {
-    background: url("img/kf-bg.jpg") no-repeat fixed center;
+    background: url("img/kf-bg-2.jpg") no-repeat fixed center;
     width: 100%;
     height: 100vh;
 }
@@ -121,42 +141,50 @@ body {
 }
 
 .kf-menu-icon {
-    background: url("img/kf-menu.png") no-repeat center;
-    width: 42px;
-    height: 35px;
+    background: url("img/kf-menu.png") no-repeat bottom;
+    width: 23px;
+    height: 19px;
     position: absolute;
     top: 105px;
     right: 145px;
     z-index: 30;
+    transition:background-position 0.6s;
+}
+
+.kf-menu-icon-close {
+    background-position: top;
+    height: 24px;
+    transition:background-position 0.2s;
 }
 
 .kf-menu-icon:hover {
     cursor: pointer;
-    opacity: .7;
+    opacity: .8;
 }
 
 .kf-main-border {
     border-style: solid;
-    border-width: 2px;
-    bottom: 25px;
-    left: 25px;
+    border-width: 1px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    top: 50px;
     padding: 0px;
     position: absolute;
-    z-index: 5;
-    right: 25px;
-    top: 25px;
-    border-color: rgba(255,255,255,0.25);
+    /*z-index: 5;*/
+    border-color: #fff;
+    opacity: 0.8;
 }
 
 .kf-main-title {
-    font-size: 25px;
+    font-size: 50px;
+
     color: rgba(255,255,255,0.75);
-    margin-bottom: 50px;
-    letter-spacing: 0.2em;
+    /*margin-bottom: 30px;*/
 }
 
 .kf-main-description {
-    font-size: 40px;
+    font-size: 20px;
     margin-bottom: 0;
 }
 
@@ -165,26 +193,26 @@ body {
     position: relative;
 }
 
-.kf-main-button {
-    color: #ffffff;
-    border-color: rgba(255,255,255,0.5);
-    border-radius: 0px;
-    border-style: solid;
-    border-width: 2px;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    font-size: 31px;
-    padding: 2px 1px;
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-}
+/*.kf-main-button {*/
+    /*color: #ffffff;*/
+    /*border-color: rgba(255,255,255,0.5);*/
+    /*border-radius: 0px;*/
+    /*border-style: solid;*/
+    /*border-width: 2px;*/
+    /*border-left-width: 0px;*/
+    /*border-right-width: 0px;*/
+    /*font-size: 31px;*/
+    /*padding: 2px 1px;*/
+    /*text-decoration: none;*/
+    /*transition: all 0.3s ease 0s;*/
+/*}*/
 
-.kf-main-button:hover {
-    color: #000;
-    border-color: #fff;
-    background-color: #fff;
-    text-decoration: none;
-}
+/*.kf-main-button:hover {*/
+    /*color: #000;*/
+    /*border-color: #fff;*/
+    /*background-color: #fff;*/
+    /*text-decoration: none;*/
+/*}*/
 
 .kf-video {
     position: absolute;
@@ -212,6 +240,24 @@ body {
     /*background: rgba(255, 0, 0, 0.5);*/
 /*}*/
 
-.kf-container-portfolio {
-    padding-top: 60px;
+.kf-page-works {
+    padding: 80px 120px 0 120px;
+}
+
+/* ABOUT */
+
+.kf-container-about {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.kf-page-top-padding {
+    padding-top: 80px;
+}
+
+/* CONTACTS */
+
+.kf-container-contacts hr {
+    width: 290px;
 }

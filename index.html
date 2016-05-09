@@ -13,14 +13,14 @@
 
 <body ng-controller="body">
 
-    <div class="kf-menu-icon" ng-click="toggleMenu()"></div>
+    <div class="kf-menu-icon" ng-class="{'kf-menu-icon-close': menu}" ng-click="toggleMenu()"></div>
 
     <div ng-view></div>
 
     <div ng-cloak ng-show="menu" class="kf-menu">
         <ul class="kf-nav">
-            <li><a href="/#/">Home</a></li>
-            <li><a href="/#/portfolio">Work</a></li>
+            <li><a href="/#/works">Works</a></li>
+            <li><a href="/#/about">About</a></li>
             <li><a href="/#/contacts">Contact</a></li>
         </ul>
     </div>
@@ -37,8 +37,9 @@
     <script src="app.module.js"></script>
     <script src="firebaseService.js"></script>
     <script src="list/list.js"></script>
-    <script src="portfolio/portfolio.js"></script>
+    <script src="works/works.js"></script>
     <script src="contacts/contacts.js"></script>
+    <script src="about/about.js"></script>
     <script src="admin/admin.js"></script>
 </body>
 </html>
